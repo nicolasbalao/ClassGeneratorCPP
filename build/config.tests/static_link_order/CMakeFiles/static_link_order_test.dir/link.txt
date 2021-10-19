@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-10 CMakeFiles/static_link_order_test.dir/main.cpp.o -o static_link_order_test  libstaticLib.a CMakeFiles/objLib.dir/objlib.cpp.o 
