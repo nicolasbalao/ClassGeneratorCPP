@@ -34,6 +34,16 @@ QPushButton
 ../includes/MainWindow.h
 /home/tengu/Documents/Formation/C++/tp/classGenerator/includes/MainWindow.h
 
+/home/tengu/Documents/Formation/C++/tp/classGenerator/src/main.cpp
+iostream
+-
+QWidget
+-
+QApplication
+-
+../includes/MainWindow.h
+/home/tengu/Documents/Formation/C++/tp/classGenerator/includes/MainWindow.h
+
 /home/tengu/Qt/6.2.0/gcc_64/include/QtCore/QList
 qlist.h
 /home/tengu/Qt/6.2.0/gcc_64/include/QtCore/qlist.h
