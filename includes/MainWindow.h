@@ -12,7 +12,7 @@ Description Fentre:
             - check Box: protégé le header...
             -check box: générer un constructeur
             -check box: générer un destructeur
-    -GroupeBox avec un check box : groupCommentaire
+    -GroupeBox avec un check box : groupremarkaire
         - FormLayout: formCommentaire
             - Auteur:
             -Date de création: date picker
@@ -26,15 +26,20 @@ Description Fentre:
 
 #include <QWidget>
 #include <QApplication>
-#include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QGroupBox>
 #include <QFormLayout>
 #include <QLineEdit>
+#include <QCheckBox>
+#include <QDateEdit>
+#include <QTextEdit>
+#include <QHBoxLayout>
+#include <QPushButton>
 
 class MainWindow : public QWidget
 {
 protected:
-    QHBoxLayout *m_layoutMain; // layout de toute la fenêtre
+    QVBoxLayout *m_layoutMain; // layout de toute la fenêtre
     // DEF CLASS
     QGroupBox *m_groupDefClass;
     QFormLayout *m_formDefClass;
@@ -42,6 +47,22 @@ protected:
     QLineEdit *m_classMere;
 
     // OPTIONS
+    QGroupBox *m_groupDefOptions;
+    QVBoxLayout *m_layoutOption;
+    QCheckBox *m_multipleIclusion;
+    QCheckBox *m_constructeur;
+
+    //remark
+    QGroupBox *m_groupRemark;
+    QFormLayout *m_formRemark;
+    QLineEdit *m_auteur;
+    QDateEdit *m_date;
+    QTextEdit *m_textRemark;
+
+    //button
+    QHBoxLayout *m_layoutButton;
+    QPushButton *m_quitter;
+    QPushButton *m_genere;
 
 public:
     MainWindow();
